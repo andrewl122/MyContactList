@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0179AA602DAF534000CFA2E8 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0179AA5F2DAF534000CFA2E8 /* DateViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		01197E462D9D0D6900D5E182 /* My Contact List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Contact List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0179AA5F2DAF534000CFA2E8 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +50,7 @@
 		01197E3D2D9D0D6900D5E182 = {
 			isa = PBXGroup;
 			children = (
+				0179AA5F2DAF534000CFA2E8 /* DateViewController.swift */,
 				01197E482D9D0D6900D5E182 /* My Contact List */,
 				01197E472D9D0D6900D5E182 /* Products */,
 			);
@@ -132,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0179AA602DAF534000CFA2E8 /* DateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

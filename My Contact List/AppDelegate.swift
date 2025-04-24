@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settings = UserDefaults.standard
 
         if settings.string(forKey: Constants.kSortField) == nil {
-            settings.set("City", forKey: Constants.kSortField)
+            settings.set("city", forKey: Constants.kSortField)
         }
         if settings.string(forKey: Constants.kSortDirectionAscending) == nil {
             settings.set(true, forKey: Constants.kSortDirectionAscending)
@@ -57,10 +57,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if context.hasChanges {
             do {
                 try context.save()
+                print("Core Data saveContext() succeeded")
             } catch {
                 let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                print("Core Data saveContext() failed: \(nserror), \(nserror.userInfo)")
             }
+        } else {
+            print("⚠️ Nothing to save: context has no changes")
         }
     }
-}
+
+    }
+
